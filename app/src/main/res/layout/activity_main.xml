@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/logoQC_desc"
+            app:srcCompat="@mipmap/logoqc" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_permis_de_conduire"
+            android:textColor="@color/basicTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/photo_desc"
+            app:srcCompat="@mipmap/pp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/signature_desc"
+            app:srcCompat="@mipmap/signature" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TableRow
+            android:id="@+id/codeRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/codeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immatriculation"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/lys"
+                    app:srcCompat="@mipmap/lys" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/nomRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permit_lastName"
+                android:textColor="@color/basicTextColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/prenomRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/prenomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permit_firstName"
+                android:textColor="@color/basicTextColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/dateDeNaissanceRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/dateDeNaissance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permit_birthDate"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dateDeNaissanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permit_birthDateText"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="12sp" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/adressRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/adressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adress"
+                android:textColor="@color/basicTextColor"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/complementAdressRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/complementAdressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complement_adress"
+                android:textColor="@color/basicTextColor"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/paysEtCPRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/paysEtCPText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pays_et_CP"
+                android:textColor="@color/basicTextColor"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sexeRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/sexe"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexe"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/sexeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexe_text"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="12sp" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/classeRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/classe"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classe"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/classe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classe_text"
+                    android:textColor="@color/basicTextColor" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CondEtTailleRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/CondRow"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cond"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/condText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cond_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tailleRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/taille"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/taille"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tailleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/taille_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/mentionEtYeuxRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/mentionRow"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/mention"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mention"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/mentionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mention_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/yeuxRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/yeux"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yeux"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/yeuxText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yeux_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/nDeRefRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/NDeRef"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NDeRef"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/NDeRefText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NDeRef_text"
+                    android:textColor="@color/basicTextColor"
+                    android:textSize="12sp" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/datesRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/dateDebRow"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dateDeb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dateDeb"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dateDeb_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dateDeb_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/dateFinRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dateFin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dateFin"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dateFin_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dateFin_text"
+                        android:textColor="@color/basicTextColor"
+                        android:textSize="12sp" />
+                </TableRow>
+
+            </TableRow>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id='@+id/section2'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/inputLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inputLastName" />
+
+        <EditText
+            android:id="@+id/inputLastName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/inputLastName_text" />
+
+        <TextView
+            android:id="@+id/inputFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inputFirstName" />
+
+        <EditText
+            android:id="@+id/inputFirstName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/inputFirstName_text" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inputSaveButton"
+            android:onClick="Enregistrer"/>
+
+        <Switch
+            android:id="@+id/inputChangeSexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inputSwitchSexe"
+            android:onClick="changeSexe"/>
+
+        <CheckBox
+            android:id="@+id/inputHideSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inputCheckBoxSignature"
+            android:onClick="hideSignature"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

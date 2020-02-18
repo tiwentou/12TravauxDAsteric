@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">12TravauxDAsteric</string>
+
+    <string name="signature_desc">signature du titulaire du permis</string>
+    <string name="photo_desc">photo du titulaire du permis</string>
+    <string name="logoQC_desc">logo du QC</string>
+    <string name="lys">lys</string>
+    <string name="text_permis_de_conduire">Permis de conduire</string>
+
+    <string name="immatriculation">L1531-171374-08</string>
+
+
+    <string name="permit_lastName">GEOFFROY</string>
+    <string name="permit_firstName">TITOUAN</string>
+
+    <string name="permit_birthDate">Date de naissance (A-M-J) :</string>
+    <string name="permit_birthDateText">1974-12-17</string>
+
+    <string name="adress">333, BOULEVARD JEAN_LESAGE</string>
+    <string name="complement_adress">APP, 432</string>
+    <string name="pays_et_CP">QUÉBEC (QC) G1KJ8J6</string>
+
+    <string name="sexe">Sexe :</string>
+    <string name="sexe_text">F</string>
+
+    <string name="classe">Classe(s) :</string>
+    <string name="classe_text">5</string>
+
+    <string name="cond">Cond :</string>
+    <string name="cond_text">A</string>
+    <string name="taille">Taille (cm) :</string>
+    <string name="taille_text">168</string>
+
+    <string name="mention">Mention(s) :</string>
+    <string name="mention_text">M</string>
+    <string name="yeux">Yeux :</string>
+    <string name="yeux_text">BLEU</string>
+
+    <string name="NDeRef">N de référence :</string>
+    <string name="NDeRef_text">P</string>
+
+    <string name="dateDeb">Valide le :</string>
+    <string name="dateDeb_text">2014-10-01</string>
+    <string name="dateFin">Expire le :</string>
+    <string name="dateFin_text">2022-12-17</string>
+
+    <string name="inputLastName">Nom :</string>
+    <string name="inputLastName_text"></string>
+
+    <string name="inputFirstName">Prénom :</string>
+    <string name="inputFirstName_text"></string>
+
+    <string name="inputSaveButton">Enregistrer</string>
+
+    <string name="inputSwitchSexe">Sexe</string>
+
+    <string name="inputCheckBoxSignature">Cacher signature</string>
+
+
+</resources>
